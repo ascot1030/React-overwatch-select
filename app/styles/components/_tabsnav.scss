@@ -1,0 +1,215 @@
+.os-tabs-nav {
+  padding-left: 0px;
+  margin-bottom: 32px;
+  list-style: none;
+  display: inline-block;
+  background-color: $BLACK_3;
+  border-radius: 6px;
+
+  .os-tabnav-item {
+    min-width: 15%;
+    float: left;
+    border-radius: 0px;
+    text-align: center;
+    margin-left: 1px;
+    box-shadow: -1px 0px;
+
+    a {
+      color: $WHITE;
+    }
+    .os-tab-item-OFFENSE{
+      width:20px;
+      height: 18px;
+      background-size: cover;
+      background-image: url("https://s3.amazonaws.com/solomid-resources/overwatch/icons/1.png");
+      float:left;
+      margin-top: -1px;
+    }
+    .os-tab-item-DEFENSE{
+      width:20px;
+      height: 18px;
+      background-size: cover;
+      background-image: url("https://s3.amazonaws.com/solomid-resources/overwatch/icons/2.png");
+      float:left;
+      margin-top: -1px;
+    }
+    .os-tab-item-TANK{
+      width:20px;
+      height: 18px;
+      background-size: cover;
+      background-image: url("https://s3.amazonaws.com/solomid-resources/overwatch/icons/3.png");
+      float:left;
+      margin-top: -1px;
+
+      @media screen and (min-width: $BP_LG) {
+        margin-left: 5px;
+        margin-right: 2px;
+      }
+    }
+    .os-tab-item-SUPPORT{
+      width:20px;
+      height: 18px;
+      background-size: cover;
+      background-image: url("https://s3.amazonaws.com/solomid-resources/overwatch/icons/4.png");
+      float:left;
+      margin-top: -1px;
+    }
+  }
+  .os-tabnav-item:first-child {
+    border-radius: 6px 0px 0px 6px;
+    margin-left: 0px;
+    box-shadow: 0px 0px;
+  }
+
+  .os-tabnav-item.active {
+    background-color: $BLUE_1;
+  }
+
+  .os-tabnav-item:nth-of-type(5) {
+    border-radius: 0px 6px 6px 0px;
+  }
+  .os-tabnav-item:active {
+    background-color: $BLUE_1;
+  }
+  .os-tabnav-item:focus {
+    background-color: $BLUE_1;
+  }
+  .os-tabnav-item:hover {
+    background-color: $BLUE_1;
+  }
+  .os-nav-link {
+    display: flex;
+    padding: 16px 30px;
+
+    @media screen and (max-width: $BP_LG) {
+      padding: 16px 16px;
+    }
+  }
+
+  .os-nav-link:hover {
+    text-decoration: none;
+  }
+  .os-nav-link:focus {
+    text-decoration: none;
+  }
+}
+.os-tabs-nav:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.center-text .os-tabs-nav {
+  display: inline-block;
+}
+
+.os-heroes {
+  .os-tabs-nav {
+
+    .os-tabnav-item:nth-of-type(1).active ~ #os-tabnav-active-back {  
+      margin-left: 0px;
+      width: 128px;
+      border-radius: 6px 0px 0px 6px;
+      @media screen and (max-width: $BP_LG) {
+        margin-left: 0px;
+        width: 100px;
+      }
+    }
+    .os-tabnav-item:nth-of-type(2).active ~ #os-tabnav-active-back {  
+      margin-left: 129px;
+      width: 130px;
+      @media screen and (max-width: $BP_LG) {
+        margin-left: 101px;
+        width: 102px;
+      }
+    }
+    .os-tabnav-item:nth-of-type(3).active ~ #os-tabnav-active-back {  
+      margin-left: 263px;
+      width: 130px;
+      @media screen and (max-width: $BP_LG) {
+        margin-left: 204px;
+        width: 102px;
+      }
+    }
+    .os-tabnav-item:nth-of-type(4).active ~ #os-tabnav-active-back {  
+      margin-left: 393px;
+      width: 117px;
+      @media screen and (max-width: $BP_LG) {
+        margin-left: 308px;
+        width: 82px;
+      }
+    }
+    .os-tabnav-item:nth-of-type(5).active ~ #os-tabnav-active-back {  
+      margin-left: 512px;
+      width: 132px;
+      border-radius: 0px 6px 6px 0px;
+      @media screen and (max-width: $BP_LG) {
+        margin-left: 392px;
+        width: 105px;
+      }
+    }
+
+    #os-tabnav-active-back {
+      height: 50px;
+      background: $BLUE_1;
+      transition: .3s ease-in-out;
+      -webkit-transition: .3s ease-in-out; // For Safari
+      -moz--webkit-transition: .3s ease-in-out; // For Safari
+    }
+  }
+}
+
+.os-maps {
+  .os-tabs-nav {
+
+    .os-tabnav-item:nth-of-type(1).active ~ #os-tabnav-active-back {  
+      margin-left: 0px;
+      width: 115px;
+      border-radius: 6px 0px 0px 6px;
+      @media screen and (max-width: $BP_LG) {
+        margin-left: 0px;
+        width: 87px;
+      }
+    }
+    .os-tabnav-item:nth-of-type(2).active ~ #os-tabnav-active-back {  
+      margin-left: 116px;
+      width: 109px;
+      @media screen and (max-width: $BP_LG) {
+        margin-left: 88px;
+        width: 81px;
+      }
+    }
+    .os-tabnav-item:nth-of-type(3).active ~ #os-tabnav-active-back {  
+      margin-left: 226px;
+      width: 104px;
+      @media screen and (max-width: $BP_LG) {
+        margin-left: 170px;
+        width: 76px;
+      }
+    }
+    .os-tabnav-item:nth-of-type(4).active ~ #os-tabnav-active-back {  
+      margin-left: 332px;
+      width: 102px;
+      @media screen and (max-width: $BP_LG) {
+        margin-left: 248px;
+        width: 74px;
+      }
+    }
+    .os-tabnav-item:nth-of-type(5).active ~ #os-tabnav-active-back {  
+      margin-left: 435px;
+      width: 115px;
+      border-radius: 0px 6px 6px 0px;
+      @media screen and (max-width: $BP_LG) {
+        margin-left: 323px;
+        width: 87px;
+      }
+    }
+
+    #os-tabnav-active-back {
+      height: 50px;
+      background: $BLUE_1;
+      transition: .3s ease-in-out;
+      -webkit-transition: .3s ease-in-out; // For Safari
+      -moz--webkit-transition: .3s ease-in-out; // For Safari
+    }
+  }
+}
